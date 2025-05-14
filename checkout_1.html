@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Оформлення покупки</h1>
+      </header>
+      <main>
+        <form id="orderForm">
+          <section class="payment-details">
+            <h2>Платіжні дані</h2>
+            <div class="form-group">
+              <label for="name">Ім'я</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="surname">Прізвище</label>
+              <input type="text" id="surname" name="surname" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Адреса електронної пошти</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="additional-info">Додаткова інформація</label>
+              <textarea id="additional-info" name="additional-info" rows="4"></textarea>
+            </div>
+          </section>
+          <section class="order-summary">
+            <h2>Ваше замовлення</h2>
+            <div class="order-item">
+              <span class="item-name">Товар</span>
+              <span class="item-price">Проміжний підсумок</span>
+            </div>
+            <div class="order-item">
+              <span class="item-name">Преміум +</span>
+              <span class="item-price">3 999</span>
+            </div>
+            <div class="order-total">
+              <span class="total-label">Підсумок</span>
+              <span class="total-price">3 999</span>
+            </div>
+          </section>
+          <section class="payment-method">
+            <p>Оплатити за допомогою платіжної системи BabylonPay</p>
+          </section>
+          <button type="submit" class="confirm-order">Підтвердити замовлення</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
